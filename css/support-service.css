@@ -1,0 +1,29 @@
+.support-service__content {
+  text-align: left;
+  margin: 0 auto;
+  border: 1px solid #959594;
+  border-radius: 24px;
+  background-color: #f9f9f9;
+  padding: 20px 30px 20px 30px;
+  max-width: 900px;
+}
+.support-service__title {
+  margin: 0px 0px 20px 0px;
+}
+.support-service__text {
+  margin: 0px 0px 20px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 0px 0px 20px 0px;
+  color: #959594;
+}
+.support-service__comment {
+  margin: 0px 0px 20px 0px;
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+}

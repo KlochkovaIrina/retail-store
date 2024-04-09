@@ -1,0 +1,75 @@
+.card-product {
+   cursor: pointer;
+   flex: 1 1 16.666%;
+   &__labels {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      display: flex;
+      flex-direction: column;
+   }
+   &__label {
+      z-index: 4;
+      background-color: #5940d4;
+      color: #f8f8f8;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      top: 16px;
+      left: 16px;
+      padding: 2px 6px 1px 6px;
+      margin: 0px 0px 2px 0px;
+   }
+   &__slider {
+      position: relative;
+   }
+
+   &__body {
+   }
+
+   &__slide {
+   }
+
+   &__image {
+      border-radius: 16px;
+   }
+
+   &__name {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+      color: #000000;
+      margin: 0px 0px 8px 0px;
+   }
+
+   &__price {
+      margin: 0px 0px 8px 0px;
+      color: #000000;
+
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+   }
+
+   &__count {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34px;
+      letter-spacing: 0em;
+      color: #000000;
+   }
+
+   &__delivery-terms {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+
+      color: #959594;
+      margin: 0px 0px 40px 0px;
+   }
+}

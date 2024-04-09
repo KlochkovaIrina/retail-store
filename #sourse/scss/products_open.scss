@@ -1,0 +1,197 @@
+.items-products__column-open {
+   position: absolute;
+   max-width: 260px;
+   display: none;
+   background-color: #fff;
+   z-index: 20;
+   left: 0px;
+   top: 22px;
+   border-radius: 15px;
+
+   cursor: pointer;
+
+   box-shadow: 0px 2px 6px 0px #00000033;
+   .items-slider {
+      // margin: 0px 0px 18px 0px;
+   }
+}
+
+.open-products-slider__container {
+   height: 200px;
+   // width: 230px;
+   width: 230px;
+   position: relative;
+   margin: 0px 0px 18px 0px;
+   .items-product__slider {
+      height: 200px;
+      // height: 170px;
+   }
+}
+
+.items-products {
+   &__column-open {
+      width: 260px;
+   }
+}
+
+.product-item {
+   &__bottom {
+      margin: 10px 0px 10px 0px;
+   }
+}
+
+.open-products {
+   &__content {
+      margin: 0px 0px 18px 0px;
+   }
+   &__images {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      //margin: 0px 0px 0px 5px;
+   }
+
+   &__image {
+      position: relative;
+      width: 100%;
+      background-color: #c1c1c1;
+      height: 62px;
+      margin: 0px 0px 7px 0px;
+      border-radius: 5px;
+      overflow: hidden;
+   }
+
+   &__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+   }
+   img {
+   }
+}
+.open-products-open {
+   //margin: 5px 25px 24px 25px;
+   // margin: 5px 10px 20px 10px;
+   padding: 5px 15px 5px 15px;
+}
+.item-product {
+   &__labels {
+   }
+
+   &__label {
+   }
+
+   &__label-1 {
+   }
+
+   &__label-2 {
+   }
+
+   &__label-3 {
+   }
+
+   &__body {
+   }
+
+   &__price-block {
+   }
+
+   &__title {
+   }
+
+   &__footer {
+   }
+
+   &__footer-block {
+   }
+
+   &__stock {
+   }
+
+   &__text {
+   }
+
+   &__quantity {
+   }
+
+   &__logo {
+   }
+
+   &__btn {
+      margin: 0px 0px 20px 0px;
+   }
+}
+.open-products-slider {
+   &__content {
+      display: flex;
+   }
+
+   &__container {
+   }
+}
+.items-product {
+   &__slider {
+   }
+}
+.items-slider {
+   margin: 0px 0px 18px 0px;
+   &__body {
+   }
+
+   &__body-1 {
+   }
+
+   &__slide {
+   }
+
+   &__image {
+   }
+
+   &__dotts {
+   }
+
+   &__dotts-1 {
+   }
+}
+.items-slider-1 {
+}
+
+.price-block {
+   &__price {
+   }
+
+   &__price-1 {
+   }
+
+   &__old-price {
+   }
+
+   &__discount {
+   }
+
+   &__discount-1 {
+   }
+}
+
+//=========================
+.round__buttons-container {
+   position: absolute;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   cursor: pointer;
+}
+.round__buttons-button {
+   background-color: #d8d8d8;
+   height: 7px;
+   width: 7px;
+   border-radius: 5px;
+   margin: 2px;
+   cursor: pointer;
+   &-active {
+      background-color: #fff;
+   }
+}

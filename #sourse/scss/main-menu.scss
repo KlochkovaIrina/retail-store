@@ -1,0 +1,75 @@
+.category-menu {
+   position: fixed;
+   z-index: 5;
+   width: 100%;
+   display: none;
+
+   margin: -30px 0px 0px 0px;
+
+   &._active {
+      display: block;
+   }
+   &__thing {
+      display: block;
+      cursor: pointer;
+      &:hover {
+         color: #5940d4;
+      }
+   }
+}
+
+//========пример=======
+
+.submenu {
+   //background-color: red;
+   //height: 40px;
+   //width: 120px;
+   //position: absolute;
+   cursor: pointer;
+   //top: 100px;
+   top: 40px;
+   //display: none;
+   left: 0px;
+   z-index: 3;
+   width: 100%;
+   background-color: #f8f8f8;
+}
+
+//========пример=======
+
+.category-menu {
+   &__content {
+      display: flex;
+      padding: 40px 80px 40px 80px;
+      justify-content: center;
+      margin: 0 auto;
+      //align-items: center;
+   }
+   &__column {
+      flex: 1 1 25%;
+   }
+
+   &__item {
+      margin: 0px 0px 40px 0px;
+   }
+
+   &__label {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 34px;
+      letter-spacing: 0em;
+      color: #000000;
+      margin: 0px 0px 24px 0px;
+   }
+
+   &__things {
+   }
+
+   &__thing {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      color: #000000;
+   }
+}

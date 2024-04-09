@@ -1,0 +1,128 @@
+//popup
+//окно входа
+.authorization {
+   &__content {
+   }
+}
+.authorization {
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+   // background-color: #f8f8f8;
+   //border-radius: 32px;
+
+   background-attachment: rgba(0, 0, 0, 0.8);
+   z-index: 2;
+   text-align: left;
+   margin: 0 auto;
+   border: 1px solid #959594;
+   border-radius: 24px;
+
+   padding: 20px 30px 20px 30px;
+   max-width: 500px;
+
+   //position: fixed;
+   //width: 100%;
+   //height: 100%;
+   //top: 0;
+   // left: 0;
+
+   &__text {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 38px;
+      letter-spacing: 0em;
+      color: #000000;
+
+      // margin: 0 auto;
+      margin: 0px auto 24px auto;
+   }
+
+   &__buttons {
+      margin: 0px 0px 24px 0px;
+   }
+
+   &__btn {
+      margin: 0px 24px 0px 0px;
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+   }
+
+   &__link {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      color: #d5b0bd;
+   }
+   &__window {
+      margin {
+      }
+   }
+   &__input {
+   }
+   &-input {
+      //min-width: 560px;
+   }
+}
+
+//окно входа
+// .popup {
+//    position: fixed;
+//    width: 100%;
+//    height: 100%;
+//    background-color: rgba(0, 0, 0, 0.5);
+//    top: 0;
+//    left: 0;
+//    z-index: 100;
+
+//    opacity: 0; //для анимации
+//    visibility: hidden; //для анимации
+//    overflow-y: auto; //добавляет скролл если много текста
+//    overflow-x: hidden; //добавляет скролл если много текста
+//    transition: all 0.8s ease 0s;
+//    &__body {
+//       //background-color: #fff;
+//       min-height: 100%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       padding: 30px 10px;
+//    }
+
+//    &__content {
+//       background-color: #f8f8f8;
+//       border-radius: 32px;
+//       color: #000;
+//       max-width: 800px;
+//       padding: 30px;
+//       position: relative;
+//    }
+
+//    &__chouse {
+//       position: absolute;
+//       right: 20px;
+//       top: 10px;
+//       font-size: 20px;
+//       color: #000;
+//       text-decoration: none;
+//    }
+
+//    &__title {
+//    }
+
+//    &__text {
+//    }
+// }
+
+// .popup.open {
+//    opacity: 1;
+//    visibility: visible;
+// }
+
+// .content-authorization__text {
+//    text-align: center;
+// }
+
+//popup

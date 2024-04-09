@@ -1,0 +1,33 @@
+//slider-product============================
+.slider-product {
+   .slider-next {
+      top: 200px;
+   }
+   .slider-prev {
+      top: 200px;
+   }
+   //max-width: 1400px;
+   position: relative;
+   &__body {
+      width: 100%;
+      position: relative;
+   }
+
+   &__slide {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      //height: 100%;
+      width: 100%;
+      // margin: 0px 21px 0px 21px;
+      &:first-child {
+         //margin: 0px 0px 0px 21px;
+      }
+      &:last-child {
+         // margin: 0px 21px 0px 0px;
+      }
+   }
+}
+
+//slider-product============================

@@ -1,0 +1,154 @@
+.page-delivery {
+   padding: 0px 0px 40px 0px;
+
+   &__container {
+   }
+   &__content {
+      text-align: left;
+      margin: 0 auto;
+      border: 1px solid #959594;
+      border-radius: 24px;
+      background-color: #f9f9f9;
+      padding: 20px 30px 20px 30px;
+      max-width: 500px;
+   }
+
+   &__title {
+      margin: 0px 0px 10px 0px;
+      font-size: 25px;
+   }
+
+   &__form {
+   }
+
+   &__text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      color: #959594;
+      margin: 0px 0px 10px 0px;
+   }
+   &__btn {
+      width: 100%;
+      margin: 0px 0px 10px 0px;
+   }
+}
+
+.form-delivery {
+   &__top {
+   }
+
+   &__container {
+      margin: 0px 5px 0px 5px;
+   }
+
+   &__bottom {
+      display: flex;
+   }
+
+   &__input {
+      // max-width: 200px;
+      //margin: 0px 0px 0px 10px;
+   }
+}
+
+.form-delivery {
+}
+.information-form {
+   &__time {
+      text-align: left;
+   }
+}
+
+.information-form {
+   &__date-items {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__date-item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      flex: 1 1 20%;
+      border: 1px solid #959594;
+      padding: 10px 20px 10px 20px;
+      border-radius: 10px;
+      margin: 0px 0px 10px 10px;
+      //max-width: 100px;
+      //min-width: 100px;
+      &:first-child {
+         // margin: 0px 0px 10px 0px;
+      }
+
+      &:hover {
+         border: 1px solid #000;
+      }
+      &:active {
+         //background-color: #000;
+         //color: #f1f1ef;
+      }
+      &._active {
+         background-color: #000;
+         color: #f1f1ef;
+      }
+   }
+
+   &__date-number {
+   }
+
+   &__date-day {
+   }
+}
+
+.information-form {
+   &__time {
+   }
+
+   &__time-items {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   &__time-item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      flex: 1 1 33.33%;
+      border: 1px solid #959594;
+      padding: 10px 20px 10px 20px;
+      border-radius: 10px;
+      margin: 0px 0px 10px 10px;
+      //max-width: 100px;
+      //min-width: 100px;
+      &:first-child {
+         //margin: 0px 0px 10px 0px;
+      }
+
+      &:hover {
+         border: 1px solid #000;
+      }
+      &:active {
+         //background-color: #000;
+         //color: #f1f1ef;
+      }
+      &._active {
+         background-color: #000;
+         color: #f1f1ef;
+      }
+   }
+
+   &__time-time {
+   }
+}
+
+#more.off {
+   display: none;
+}

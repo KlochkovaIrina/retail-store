@@ -1,0 +1,165 @@
+.personal-account {
+   padding: 0px 0px 40px 0px;
+   .main-menu {
+      display: none;
+   }
+}
+.personal-account {
+   &__container {
+      text-align: center;
+   }
+
+   &__title {
+      margin: 0px 0px 10px 0px;
+   }
+
+   &__profile {
+      margin: 0px 0px 10px 0px;
+   }
+   &__order {
+      margin: 0 auto;
+      // border: 1px solid #959594;
+      cursor: pointer;
+      background-color: #f9f9f9;
+      padding: 20px 30px 20px 30px;
+      max-width: 900px;
+      text-align: left;
+      border-bottom: 1px solid #1c1c1c;
+      &:last-child {
+         border-bottom: none;
+      }
+   }
+
+   &__content {
+      text-align: left;
+      margin: 0 auto;
+      border: 1px solid #959594;
+      border-radius: 24px;
+      background-color: #f9f9f9;
+      padding: 20px 30px 20px 30px;
+      max-width: 900px;
+   }
+
+   &__item {
+   }
+   &__buttons {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__button {
+      color: #d5b0bd;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      background-color: #f9f9f9;
+   }
+}
+
+.item-account {
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 28px;
+   letter-spacing: 0em;
+   margin: 0px 0px 20px 0px;
+
+   &__title {
+      color: #959594;
+   }
+
+   &__information {
+      color: #1c1c1c;
+   }
+}
+
+.personal-account {
+   &__orders {
+   }
+}
+.orders-account {
+   &__content {
+      margin: 20px;
+   }
+
+   &__status {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      margin: 0px 0px 5px 0px;
+      color: #959594;
+      text-transform: uppercase;
+   }
+
+   &__name {
+      display: flex;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+      //margin: 0px 0px 20px 0px;
+      color: #1c1c1c;
+      margin: 0px 0px 10px 0px;
+   }
+
+   &__text {
+      margin: 0px 5px 0px 0px;
+   }
+
+   &__number {
+      margin: 0px 5px 0px 0px;
+   }
+
+   &__date {
+      margin: 0px 5px 0px 0px;
+   }
+
+   &__price {
+      display: flex;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0em;
+
+      color: #959594;
+      margin: 0px 0px 20px 0px;
+      &-count {
+      }
+   }
+
+   &__price-text {
+      margin: 0px 5px 0px 0px;
+   }
+
+   &__products {
+      display: flex;
+   }
+
+   &__product {
+      margin: 0px 5px 0px 5px;
+      cursor: pointer;
+   }
+}
+
+// .card-product {
+//    &__image {
+//       position: relative;
+//       width: 100px;
+//       height: 150px;
+//       img {
+//          width: 100%;
+//          height: 100%;
+//       }
+//    }
+// }
+
+.orders-account__image {
+   position: relative;
+   width: 100px;
+   height: 150px;
+   img {
+      position: absolute;
+      // width: 100%;
+      //  height: 100%;
+   }
+}

@@ -1,0 +1,20 @@
+.slider-product {
+  position: relative;
+}
+.slider-product .slider-next {
+  top: 200px;
+}
+.slider-product .slider-prev {
+  top: 200px;
+}
+.slider-product__body {
+  width: 100%;
+  position: relative;
+}
+.slider-product__slide {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

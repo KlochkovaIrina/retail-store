@@ -1,0 +1,122 @@
+.personal-account {
+  padding: 0px 0px 40px 0px;
+}
+.personal-account .main-menu {
+  display: none;
+}
+
+.personal-account__container {
+  text-align: center;
+}
+.personal-account__title {
+  margin: 0px 0px 10px 0px;
+}
+.personal-account__profile {
+  margin: 0px 0px 10px 0px;
+}
+.personal-account__order {
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 20px 30px 20px 30px;
+  max-width: 900px;
+  text-align: left;
+  border-bottom: 1px solid #1c1c1c;
+}
+.personal-account__order:last-child {
+  border-bottom: none;
+}
+.personal-account__content {
+  text-align: left;
+  margin: 0 auto;
+  border: 1px solid #959594;
+  border-radius: 24px;
+  background-color: #f9f9f9;
+  padding: 20px 30px 20px 30px;
+  max-width: 900px;
+}
+.personal-account__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.personal-account__button {
+  color: #d5b0bd;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  background-color: #f9f9f9;
+}
+
+.item-account {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 0px 0px 20px 0px;
+}
+.item-account__title {
+  color: #959594;
+}
+.item-account__information {
+  color: #1c1c1c;
+}
+
+.orders-account__content {
+  margin: 20px;
+}
+.orders-account__status {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 0px 0px 5px 0px;
+  color: #959594;
+  text-transform: uppercase;
+}
+.orders-account__name {
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #1c1c1c;
+  margin: 0px 0px 10px 0px;
+}
+.orders-account__text {
+  margin: 0px 5px 0px 0px;
+}
+.orders-account__number {
+  margin: 0px 5px 0px 0px;
+}
+.orders-account__date {
+  margin: 0px 5px 0px 0px;
+}
+.orders-account__price {
+  display: flex;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #959594;
+  margin: 0px 0px 20px 0px;
+}
+.orders-account__price-text {
+  margin: 0px 5px 0px 0px;
+}
+.orders-account__products {
+  display: flex;
+}
+.orders-account__product {
+  margin: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+
+.orders-account__image {
+  position: relative;
+  width: 100px;
+  height: 150px;
+}
+.orders-account__image img {
+  position: absolute;
+}
