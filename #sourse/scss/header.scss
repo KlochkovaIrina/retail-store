@@ -108,7 +108,7 @@
       &-2 {
          position: relative;
          display: flex;
-         flex: 1 1 50%;
+         flex: 1 1 35%;
       }
       &-3 {
          display: flex;
@@ -143,6 +143,7 @@
    &__logo {
       flex: 0 0 150px;
       width: 150px;
+
       cursor: pointer;
       img {
          max-width: 100%;
@@ -301,8 +302,10 @@
       position: relative;
       //background-color: #4462ff;
       img {
-         width: 24px;
-         height: 24px;
+         //width: 24px;
+         //height: 24px;
+         width: 20px;
+         height: 20px;
       }
    }
    span {
@@ -310,9 +313,9 @@
       position: absolute;
       display: flex;
       align-items: center;
-      padding: 2px 6px 0px 6px;
+      padding: 1px 10px 0px 10px;
       color: #fff;
-      font-size: 14px;
+      font-size: 10px;
       font-weight: 500;
       line-height: 19.6px;
       letter-spacing: -0.025em;
