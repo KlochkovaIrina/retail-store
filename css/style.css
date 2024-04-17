@@ -159,7 +159,7 @@ body.lock {
 	padding: 20px 0px 50px 0px;
 }
 .header__bottom-menu a {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 500;
 	line-height: 24px;
 	letter-spacing: 0em;
@@ -4567,7 +4567,7 @@ textarea {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 70px;
+	font-size: 50px;
 	font-weight: 700;
 	line-height: 110px;
 	letter-spacing: 0em;
@@ -4576,18 +4576,18 @@ textarea {
 	z-index: 100;
 }
 .preview-page__text {
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 45px;
 	letter-spacing: 0em;
 	color: #595862;
-	width: 600px;
+	width: 370px;
 	margin: 0px 0px 72px 0px;
 }
 .preview-page__title {
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 700;
-	line-height: 38px;
+	line-height: 20px;
 	letter-spacing: 0em;
 	margin: 0px 0px 40px 0px;
 	color: #595862;
