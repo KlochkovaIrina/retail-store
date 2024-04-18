@@ -1,10 +1,31 @@
 .card-product {
+   //background-color: #959594;
    cursor: pointer;
-   flex: 1 1 16.666%;
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 15%;
+   width: 150px;
+   margin: 0px 20px 0px 0px;
+   border: 1px solid #fff;
+   border-radius: 16px;
+   padding: 10px;
+   &:hover {
+      border: 1px solid #e9e9e9;
+      .prolapse-card {
+         display: block;
+      }
+   }
+
+   &__information {
+      position: relative;
+   }
+   &__container {
+   }
+
    &__labels {
       position: absolute;
-      top: 16px;
-      left: 16px;
+      top: 20px;
+      left: 20px;
       display: flex;
       flex-direction: column;
    }
@@ -13,13 +34,12 @@
       background-color: #5940d4;
       color: #f8f8f8;
       border-radius: 100px;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 0em;
-      top: 16px;
-      left: 16px;
-      padding: 2px 6px 1px 6px;
+      font-size: 8px;
+      font-weight: 700;
+      line-height: 15px;
+      top: 20px;
+      left: 20px;
+      padding: 0px 10px 0px 10px;
       margin: 0px 0px 2px 0px;
    }
    &__slider {
@@ -71,5 +91,101 @@
 
       color: #959594;
       margin: 0px 0px 40px 0px;
+   }
+}
+
+//================================
+.prolapse-card {
+   //display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: #f8f8f8;
+   width: 100%;
+   z-index: 5;
+   &__images {
+      display: flex;
+   }
+   &__image {
+      margin: 0px 2px 0px 2px;
+      img {
+         width: 30px;
+         height: 30px;
+      }
+   }
+}
+
+.prolapse-card__image {
+   img {
+      //width: 30px;
+      //height: 30px;
+   }
+}
+//================================
+
+.prolapse-card__image {
+   img {
+      //width: 50px;
+      //height: 50px;
+   }
+}
+//============
+.card-product {
+   &__prolapse {
+   }
+}
+.prolapse-card {
+   &__label {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 22.4px;
+      text-align: left;
+      color: #000;
+   }
+   &__name {
+      margin: 0px 5px 0px 0px;
+   }
+
+   &__item {
+      display: flex;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 19.6px;
+      color: #959594;
+      align-items: center;
+   }
+
+   &__value {
+      //font-size: 12px;
+      .prolapse-card__dimension {
+         font-size: 12px;
+      }
+      span {
+         margin: 0px 2px 0px 2px;
+      }
+   }
+
+   &__dimensions {
+      display: flex;
+   }
+
+   &__dimension {
+      padding: 0px 2px 0px 2px;
+      &-stock {
+         color: #000;
+      }
+      &-active {
+         color: #5940d4;
+      }
+      &:hover {
+         color: #5940d4;
+      }
+   }
+   &__btn {
+      width: 100%;
+   }
+}
+.card-popup {
+   &__item {
    }
 }
