@@ -6,9 +6,10 @@
    flex: 1 1 15%;
    width: 150px;
    margin: 0px 20px 0px 0px;
-   border: 1px solid #fff;
+   border: 1px solid #f8f8f8;
    border-radius: 16px;
    padding: 10px;
+
    &:hover {
       border: 1px solid #e9e9e9;
       .prolapse-card {
@@ -105,6 +106,7 @@
    z-index: 5;
    &__images {
       display: flex;
+      margin: 0px 0px 10px 0px;
    }
    &__image {
       margin: 0px 2px 0px 2px;
@@ -141,6 +143,7 @@
       line-height: 22.4px;
       text-align: left;
       color: #000;
+      margin: 0px 0px 10px 0px;
    }
    &__name {
       margin: 0px 5px 0px 0px;
@@ -153,6 +156,7 @@
       line-height: 19.6px;
       color: #959594;
       align-items: center;
+      margin: 0px 0px 5px 0px;
    }
 
    &__value {
@@ -183,9 +187,57 @@
    }
    &__btn {
       width: 100%;
+      margin: 0px 0px 10px 0px;
+   }
+   &__delivery {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 19.6px;
+      color: #959594;
+      margin: 0px 0px 10px 0px;
+   }
+   &__price {
    }
 }
 .card-popup {
    &__item {
    }
 }
+.prolapse-price {
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 0px 5px 0px;
+
+   &__item {
+      flex: 1 1 33.333%;
+      padding: 10px 5px 10px 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e9e9e9;
+      border-radius: 4px;
+   }
+
+   &__name {
+      font-size: 8px;
+      font-weight: 500;
+      line-height: 10px;
+      text-align: center;
+      color: #959594;
+      margin: 0px 0px 5px 0px;
+   }
+
+   &__quantity {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: center;
+      color: #959594;
+      .rub:after {
+         background-color: red;
+      }
+   }
+}
+
+//================================
