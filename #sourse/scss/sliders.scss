@@ -269,7 +269,9 @@
 
 .card-product {
    position: relative;
-
+   .ibg img {
+      border-radius: 12px;
+   }
    &__slider {
       cursor: pointer;
 
@@ -298,6 +300,7 @@
       position: relative;
       border-radius: 25px;
       width: 100%;
+      border-radius: 16px;
 
       //width: 200px;
       //height: 300px;
@@ -324,6 +327,7 @@
       height: 100%;
       top: 0;
       left: 0;
+      border-radius: 16px;
    }
 }
 .addproduct-product {

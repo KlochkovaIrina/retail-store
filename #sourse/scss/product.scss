@@ -1,6 +1,4 @@
 .card-product {
-   //background-color: #959594;
-   cursor: pointer;
    display: flex;
    flex-direction: column;
    flex: 1 1 15%;
@@ -9,6 +7,7 @@
    border: 1px solid #f8f8f8;
    border-radius: 16px;
    padding: 10px;
+   position: relative;
 
    &:hover {
       border: 1px solid #e9e9e9;
@@ -16,9 +15,10 @@
          display: block;
       }
    }
+   &__content {
+   }
 
    &__information {
-      position: relative;
    }
    &__container {
    }
@@ -97,15 +97,21 @@
 
 //================================
 .prolapse-card {
+   border: 1px solid #e9e9e9;
+   border-radius: 16px;
+   width: 150px;
    //display: none;
    position: absolute;
+   padding: 10px;
+
+   //background-color: #959594;
    top: 0;
    left: 0;
    background-color: #f8f8f8;
    width: 100%;
-   z-index: 5;
    &__images {
       display: flex;
+      justify-content: space-between;
       margin: 0px 0px 10px 0px;
    }
    &__image {
@@ -129,6 +135,7 @@
    img {
       //width: 50px;
       //height: 50px;
+      border-radius: 5px;
    }
 }
 //============
@@ -137,6 +144,8 @@
    }
 }
 .prolapse-card {
+   display: none;
+   z-index: 10;
    &__label {
       font-size: 12px;
       font-weight: 700;
@@ -220,7 +229,7 @@
    }
 
    &__name {
-      font-size: 8px;
+      font-size: 7px;
       font-weight: 500;
       line-height: 10px;
       text-align: center;
@@ -229,14 +238,11 @@
    }
 
    &__quantity {
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 700;
       line-height: 20px;
       text-align: center;
       color: #959594;
-      .rub:after {
-         background-color: red;
-      }
    }
 }
 

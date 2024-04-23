@@ -878,6 +878,9 @@ body.lock {
 .card-product {
 	position: relative;
 }
+.card-product .ibg img {
+	border-radius: 12px;
+}
 .card-product__slider {
 	cursor: pointer;
 	height: 295px;
@@ -901,6 +904,7 @@ body.lock {
 	position: relative;
 	border-radius: 25px;
 	width: 100%;
+	border-radius: 16px;
 	/*@media (max-width: 1700px) {
 	   padding: 100px;
 	}
@@ -922,6 +926,7 @@ body.lock {
 	height: 100%;
 	top: 0;
 	left: 0;
+	border-radius: 16px;
 }
 
 .addproduct-product__slider {
@@ -1045,7 +1050,6 @@ textarea {
 	content: "₽";
 	margin: 0px 0px 0px 4px;
 	font-weight: 900;
-	font-size: 20px;
 }
 
 .count:after {
@@ -2101,7 +2105,6 @@ textarea {
 	width: 100%;
 }
 .card-product {
-	cursor: pointer;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2117,15 +2120,13 @@ textarea {
 	border: 1px solid #f8f8f8;
 	border-radius: 16px;
 	padding: 10px;
+	position: relative;
 }
 .card-product:hover {
 	border: 1px solid #e9e9e9;
 }
 .card-product:hover .prolapse-card {
 	display: block;
-}
-.card-product__information {
-	position: relative;
 }
 .card-product__labels {
 	position: absolute;
@@ -2191,17 +2192,23 @@ textarea {
 }
 
 .prolapse-card {
+	border: 1px solid #e9e9e9;
+	border-radius: 16px;
+	width: 150px;
 	position: absolute;
+	padding: 10px;
 	top: 0;
 	left: 0;
 	background-color: #f8f8f8;
 	width: 100%;
-	z-index: 5;
 }
 .prolapse-card__images {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	margin: 0px 0px 10px 0px;
 }
 .prolapse-card__image {
@@ -2212,6 +2219,14 @@ textarea {
 	height: 30px;
 }
 
+.prolapse-card__image img {
+	border-radius: 5px;
+}
+
+.prolapse-card {
+	display: none;
+	z-index: 10;
+}
 .prolapse-card__label {
 	font-size: 12px;
 	font-weight: 700;
@@ -2301,7 +2316,7 @@ textarea {
 	border-radius: 4px;
 }
 .prolapse-price__name {
-	font-size: 8px;
+	font-size: 7px;
 	font-weight: 500;
 	line-height: 10px;
 	text-align: center;
@@ -2309,14 +2324,11 @@ textarea {
 	margin: 0px 0px 5px 0px;
 }
 .prolapse-price__quantity {
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: 700;
 	line-height: 20px;
 	text-align: center;
 	color: #959594;
-}
-.prolapse-price__quantity .rub:after {
-	background-color: red;
 }
 
 .items-products__column-open {
