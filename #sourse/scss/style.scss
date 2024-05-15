@@ -246,6 +246,7 @@ body.lock {
 @import "personal-account.scss";
 @import "page-delivery.scss";
 @import "support-service.scss";
+@import "extented-catalog.scss";
 
 //подключение стилей
 //подключение стилей
@@ -372,12 +373,19 @@ body.lock {
       }
    }
    &__image {
-      margin: 20px 0px 0px 0px;
-
+      //margin: 20px 0px 0px 0px;
+      width: 100%;
+      height: 200px;
+      //width: 100%;
+      // position: relative;
+      // height: 720px;
       img {
-         width: 550px;
-         height: 400px;
-         //max-width: 932px;
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+
          @media (max-width: 1950px) {
             // max-width: 800px;
             // margin: 40px 0px 0px 0px;
@@ -728,16 +736,17 @@ body.lock {
 }
 .preview-page {
    margin: 0px 0px 80px 0px;
+
    &__information {
       //z-index: 10;
-      padding: 0px 0px 0px 100px;
+      background-color: #c1c1c1;
+      // padding: 0px 0px 0px 100px;
       position: relative;
       // right: auto;
       &-content {
          position: absolute;
          // z-index: 1;
          //background-color: #4462ff;
-
          top: 0;
       }
    }
@@ -788,16 +797,19 @@ body.lock {
    }
 
    &__picture {
+      background-color: #979797;
       display: flex;
-
-      margin-left: auto;
+      position: relative;
+      //margin-left: auto;
+      //width: 100px;
    }
    &__image {
-      margin-right: auto;
-      right: auto;
+      //margin-right: auto;
+      //right: auto;
+
       img {
-         width: 100%;
-         height: 100%;
+         // width: 100%;
+         //height: 100%;
       }
    }
 }
