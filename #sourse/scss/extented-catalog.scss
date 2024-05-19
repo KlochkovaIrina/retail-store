@@ -28,12 +28,18 @@
 //======================
 .content {
    &__shell {
+      display: flex;
    }
 
    &__side {
+      flex: 0 0 300px;
+
+      //background-color: #959594;
    }
 
    &__page {
+      flex: 1 1 auto;
+      //background-color: #5940d4;
    }
 }
 .side-content {
@@ -53,12 +59,27 @@
    }
 
    &__section {
+      max-width: 200px;
+      margin: 0px 0px 10px 0px;
+      &-btn {
+         position: relative;
+         display: flex;
+         justify-content: flex-end;
+         font-size: 10px;
+         font-weight: 500;
+         line-height: 20px;
+         letter-spacing: 0em;
+         color: #5940d4;
+         background-color: #f8f8f8;
+         text-align: right;
+         margin: 0px 0px 20px 0px;
+      }
    }
 
    &__title {
       // color: #959594;
 
-      margin: 0px 26px 0px 0px;
+      margin: 0px 26px 20px 0px;
       display: flex;
       align-items: center;
       span {
@@ -72,12 +93,49 @@
    }
 
    &__body {
+      margin: 0px 0px 10px 0px;
+      &-scroll {
+         height: 135px;
+         overflow-y: scroll;
+      }
+      &-scroll::-webkit-scrollbar {
+         width: 7px; /* здесь задается ширина скрола, в данном случае он не будет отображен */
+         background: #d9d9d9;
+         border-radius: 25px;
+      }
+      &-scroll::-webkit-scrollbar-thumb {
+         border-radius: 25px;
+         background: #5940d4;
+         width: 7px;
+      }
+      &-two-options {
+         display: flex;
+      }
    }
 
+   &__colors {
+      display: flex;
+   }
+
+   &__color {
+      background-color: #d5b0bd;
+      width: 25px;
+      height: 25px;
+      border-radius: 50px;
+      margin: 0px 0px 0px 5px;
+      cursor: pointer;
+   }
    &__checkbox {
+      //margin: 0px 10px 0px 0px;
+      &-options {
+         margin: 0px 5px 0px 0px;
+      }
    }
 }
 .checkbox {
+   &-circle {
+      display: flex;
+   }
    &__input {
    }
 
@@ -88,3 +146,24 @@
    }
 }
 //======================
+.filter-content-search {
+   &__content {
+      margin: 0px 0px 20px 0px;
+      border: none;
+      background-color: #f1f1ef;
+   }
+
+   &__input {
+      .input {
+         background-color: #f1f1ef;
+         display: flex;
+         position: relative;
+      }
+   }
+   &__btn {
+      background: url("../img/img/search.png") 0 0 no-repeat;
+      width: 20px;
+      height: 20px;
+      margin: 5px 20px 5px 20px;
+   }
+}

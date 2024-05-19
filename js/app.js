@@ -3725,54 +3725,11 @@ let _slideToggle = (target, duration = 500) => {
 //красивая открыашка==========================================
 //========================================
 //открытие/закрытие меин меню================================
-/*
-let menuPageBurger = document.querySelector('.main-menu__link-1');
-let menuPageBody = document.querySelector('.category-menu-1')
-menuPageBurger.addEventListener("click", function (e) {
-   menuPageBurger.classList.toggle('_active');
-   _slideToggle(menuPageBody);
-});
-
-let menuPageBurger_2 = document.querySelector('.main-menu__link-2');
-let menuPageBody_2 = document.querySelector('.category-menu-2')
-menuPageBurger_2.addEventListener("click", function (e) {
-   menuPageBurger_2.classList.toggle('_active');
-   _slideToggle(menuPageBody_2);
-});
-*/
-
-
-
-
-
-/*let mainMenuLink = document.querySelector('.main-menu__link');
-let categoryMenu = document.querySelector('.category-menu');
-mainMenuLink.addEventListener("click", function (e) {
-   mainMenuLink.classList.toggle('_active');
-   categoryMenu.classList.toggle('_active');
-   //_slideToggle(categorySearch);
-});*/
 
 
 //открытие/закрытие бургера================================
-//попап окна открытия вход=================================
 
 
-//попап окна открытия вход================================
-//открытие/закрытие размеров===============================
-/*let cardChoiceButton = document.querySelector('.size-block__button-show');
-let cardChoiceBodyContinuation = document.querySelector('.size-block__body-continuation')
-cardChoiceButton.addEventListener("click", function (e) {
-   cardChoiceButton.classList.toggle('_active');
-   cardChoiceBodyContinuation.classList.toggle('_active');
-
-   // _slideToggle(cardChoiceBodyContinuation);
-   //cardChoiceBodyContinuation.classList.toggle('_active');
-});
-*/
-//const button = document.getElementById('myButton');
-//button.textContent = 'Новый текст кнопки';
-//открытие/закрытие размеров===============================
 
 //Select=================
 let selects = document.getElementsByTagName('select');
@@ -3952,6 +3909,8 @@ function selects_update_all() {
 
 //=================
 //Tabs
+
+
 let tabs = document.querySelectorAll("._tabs");
 for (let index = 0; index < tabs.length; index++) {
    let tab = tabs[index];
@@ -4008,215 +3967,6 @@ if (spollers.length > 0) {
 
 //spollers=================================
 
-//открытие/закрытие бургера================================
-
-//открытие/закрытие бургера================================
-
-//=================
-
-
-//открытие/закрытие поиска===============================
-/*let searchSelect = document.querySelector('.search-header__content');
-let categorySearch = document.querySelector('.categories-search');
-searchSelect.addEventListener("click", function (e) {
-   searchSelect.classList.toggle('_active');
-   categorySearch.classList.toggle('_active');
-   //_slideToggle(categorySearch);
-});*/
-
-//main-menu==============
-/*
-document.getElementById('nav').onclick = function (event) {
-   var target = event.target;//отслеживаем где был клик
-   //var main_link = document.querySelector('.main-menu__link');
-   if (target.className == 'main-menu__link') {
-      var s = target.getElementsByClassName('submenu');
-      closeMenu();
-      s[0].style.display = 'block';
-   }
-
-}
-
-document.onclick = function (event) {
-   var target = event.target;
-   console.log(event.target);
-   if (target.className != 'main-menu__link' && target.className != 'submenu') {
-      closeMenu();
-   }
-}
-
-function closeMenu() {
-   var menu = document.getElementById('nav');
-   var subm = document.getElementsByClassName('submenu');
-   for (var i = 0; i < subm.length; i++) {
-      subm[i].style.display = "none";
-   }
-}*/
-//main-menu==============
-
-
-
-//РАБОЧИЙ!!!!!
-//main-menu==============
-/*document.getElementById('nav').onclick = function (event) {
-   var target = event.target;//отслеживаем где был клик
-   if (target.className == 'main-menu__link') {
-      var s = target.getElementsByClassName('submenu');
-      closeMenu();
-      s[0].style.display = 'block';
-   }
-
-}
-
-document.onclick = function (event) {
-   var target = event.target;
-   console.log(event.target);
-   if (target.className != 'main-menu__link' && target.className != 'submenu') {
-      closeMenu();
-   }
-}
-
-function closeMenu() {
-   var menu = document.getElementById('nav');
-   var subm = document.getElementsByClassName('submenu');
-   for (var i = 0; i < subm.length; i++) {
-      subm[i].style.display = "none";
-   }
-}*/
-//main-menu==============
-//РАБОЧИЙ!!!!!
-//Tabs
-//main-menu==============
-
-
-
-/*document.getElementById('nav').onclick = function (event) {
-   var target = event.target;//отслеживаем где был клик
-   //var main_link = document.querySelector('.main-menu__link');
-   if (target.className == 'main-menu__link') {
-      var s = target.getElementsByClassName('submenu');
-      closeMenu();
-      s[0].style.display = 'block';
-   }
-
-}
-
-document.onclick = function (event) {
-   var target = event.target;
-   console.log(event.target);
-   if (target.className != 'main-menu__link' && target.className != 'submenu') {
-      closeMenu();
-   }
-}
-
-function closeMenu() {
-   var menu = document.getElementById('nav');
-   var subm = document.getElementsByClassName('submenu');
-   for (var i = 0; i < subm.length; i++) {
-      subm[i].style.display = "none";
-   }
-}
-//main-menu==============
-*/
-
-//Tabs
-/*let tabs = document.querySelectorAll("._tabs");
-for (let index = 0; index < tabs.length; index++) {
-   let tab = tabs[index];
-   let tabs_items = tab.querySelectorAll("._tabs-item");
-   let tabs_blocks = tab.querySelectorAll("._tabs-block");
-   for (let index = 0; index < tabs_items.length; index++) {
-      let tabs_item = tabs_items[index];
-      tabs_item.addEventListener("click", function (e) {
-         for (let index = 0; index < tabs_items.length; index++) {
-            let tabs_item = tabs_items[index];
-            tabs_item.classList.remove('_active');
-            tabs_blocks[index].classList.remove('_active');
-         }
-         tabs_item.classList.add('_active');
-         tabs_blocks[index].classList.add('_active');
-         e.preventDefault();
-      });
-   }
-}*/
-//=================
-
-/*let primer = document.querySelectorAll(".primer");
-for (let index = 0; index < primer.length; index++) {
-   let prim = primer[index];
-   let primer_btn = prim.querySelectorAll(".primer-btn");
-   let primer_show = prim.querySelectorAll(".primer-show");
-   for (let index = 0; index < primer_btn.length; index++) {
-      let primer_b = primer_btn[index];
-      primer_b.addEventListener("click", function (e) {
-
-         for (let index = 0; index < primer_btn.length; index++) {
-            let primer_b = primer_btn[index];
-            let primer_s = primer_show[index];
-            primer_b.classList.toggle('_active');
-            primer_s.classList.toggle('_active');
-
-            primer_b.classList.toggle('_active');
-            primer_s.classList.toggle('_active');
-         }
-
-         primer_b.classList.toggle('_active');
-         primer_show[index].classList.toggle('_active');
-         e.preventDefault();
-      });
-   }
-}*/
-
-/*
-let primer = document.querySelectorAll(".primer");
-for (let index = 0; index < primer.length; index++) {
-   let prim = primer[index];
-   let primer_btn = prim.querySelectorAll(".primer-btn");
-   let primer_show = prim.querySelectorAll(".primer-show");
-   for (let index = 0; index < primer_btn.length; index++) {
-      let primer_b = primer_btn[index];
-      primer_b.addEventListener("click", function (e) {
-         for (let index = 0; index < primer_btn.length; index++) {
-            let primer_b = primer_btn[index];
-            let primer_s = primer_show[index];
-            primer_b.classList.toggle('_active');
-            primer_s.classList.toggle('_active');
-            primer_b.classList.toggle('_active');
-            primer_s.classList.toggle('_active');
-         }
-
-         //primer_b.classList.toggle('_active');
-         primer_show[index].classList.toggle('_active');
-
-         e.preventDefault();
-      });
-   }
-}
-*/
-
-
-
-//let mainMenu = document.querySelectorAll('.primer-btn');
-//let contentBody = document.querySelectorAll('.primer-show');
-
-
-
-
-
-/*let sizeProductItem = document.querySelectorAll('.size-product__item');
-for (let index = 0; index < sizeProductItem.length; index++) {
-   let item = sizeProductItem[index];
-   item.addEventListener("click", function (e) {
-      //item.classList.toggle('_active');
-      if (item.clicked == true) {
-         item.classList.toggle('_active');
-      } else {
-         item.classList.toggle('_active');
-      }
-   })
-};*/
-
-
 const buttons = document.querySelectorAll('.size-product__item')
 let btn_basket = document.querySelector('.page-product__btn');
 for (let i = 0; i < buttons.length; i++) {
@@ -4226,78 +3976,6 @@ for (let i = 0; i < buttons.length; i++) {
       btn_basket.textContent = 'добавить';
    }
 }
-
-//const button = document.getElementById('myButton');
-//button.textContent = 'Новый текст кнопки';
-
-////let btn_basket = document.querySelector('.page-product__btn');
-//btn_basket.textContent = 'добавить';
-
-
-
-//клики на кнопки выбора размеров 
-/*let sizeProductItem = document.querySelectorAll('.size-product__item');
-for (let index = 0; index < sizeProductItem.length; index++) {
-   let item = sizeProductItem[index];
-   item.addEventListener("click", function (e) {
-
-      item.classList.toggle('_active');
-
-   })
-};*/
-
-
-/*
-function myFunction() {
-   document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
-   if (!e.target.matches('.dropbtn')) {
-      var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-         myDropdown.classList.remove('show');
-      }
-   }
-}
-
-
-function myFunction_1() {
-   document.getElementById("myDropdown_1").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (e) {
-   if (!e.target.matches('.dropbtn_1')) {
-      var myDropdown_1 = document.getElementById("myDropdown_1");
-      if (myDropdown_1.classList.contains('show')) {
-         myDropdown_1.classList.remove('show');
-      }
-   }
-}*/
-
-/*let x = document.querySelector('.page-delivery__btn-date');
-let y = document.querySelector('.form-delivery__information');
-
-x.addEventListener("click", function (e) {
-   x.classList.toggle('_active');
-   y.classList.toggle('_active');
-   //pageDeliveryDate.textContent = 'Выбрать дату и время';
-
-});*/
-
-//const btnDate = document.querySelector('')
-
-/*document.addEventListener('DOMContentLoaded', _ => {
-   document.getElementById('btn-show').addEventListener('click', function () {
-      document.getElementById('more').classList.toggle('_active')
-      this.innerHTML = this.innerHTML === 'Выберите дату и время' ? 'Введите адрес' : 'Выберите дату и время'
-   })
-})*/
-
-
-
 
 const informationFormDateItem = document.querySelectorAll('.information-form__date-item')
 for (let i = 0; i < informationFormDateItem.length; i++) {
@@ -4333,7 +4011,44 @@ buttonCatalog.addEventListener("click", function (e) {
 
 
 
+//noislider=================================
+const priceSlider = document.querySelector('.price-filter__slider');
+if (priceSlider) {
+   noUiSlider.create(priceSlider, {
+      start: [0, 200000],
+      connect: true,
+      //tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
+      tooltips: true,
+      range: {
+         'min': [0],
+         'max': [200000]
+      }
+   });
 
+
+
+   //синие кружочки 
+   const priceStart = document.getElementById('price-start');
+   const priceEnd = document.getElementById('price-end');
+   priceStart.addEventListener('change', setPriceValues);
+   priceEnd.addEventListener('change', setPriceValues);
+   //синие кружочки 
+
+   //генерация оранжевых кружков и окошек 
+   function setPriceValues() {
+      let priceStartValue;
+      let priceEndValue;
+      if (priceStart.value != '') {
+         priceStartValue = priceStart.value;
+      }
+      if (priceEnd.value != '') {
+         priceEndValue = priceEnd.value;
+      }
+      priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
+   }
+   //генерация оранжевых кружков и окошек 
+}
+//noislider=================================
 
 //Динамический адаптив (адаптив переносов элементов)=================
 
