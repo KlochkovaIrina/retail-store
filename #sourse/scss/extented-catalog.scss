@@ -167,3 +167,115 @@
       margin: 5px 20px 5px 20px;
    }
 }
+
+//=================================
+.price-filter {
+   &__slider {
+      height: 4px;
+      background-color: #d5b0bd;
+      margin: 0px 11px 50px 11px;
+      position: relative;
+      &::before,
+      &::after {
+         content: "";
+         background-color: #d5b0bd;
+         width: 11px;
+         height: 4px;
+         position: absolute;
+         top: 0;
+      }
+      &::before {
+         //left: -11px;
+      }
+      &::after {
+         right: -11px;
+      }
+      .noUi-base,
+      .noUi-connects {
+         position: relative;
+         height: 4px;
+      }
+
+      .noUi-origin,
+      .noUi-connect {
+         width: 10%;
+         height: 10%;
+         will-change: transform;
+         position: absolute;
+         z-index: 1;
+         top: 0;
+         right: 0;
+         transform-origin: 0 0;
+         transform-style: flat;
+      }
+      .noUi-connect {
+         width: 100%;
+         height: 100%;
+         background-color: #5940d4;
+      }
+      .noUi-handle {
+         position: relative;
+         top: -10px;
+         width: 23px;
+         height: 23px;
+         right: -11.5px;
+         background-color: #ffffff;
+         border: 1px solid #5940d4;
+         border-radius: 50%;
+         cursor: pointer;
+         &::after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: #5940d4;
+            position: absolute;
+            left: 3.5px;
+            top: 3.5px;
+            border-radius: 50%;
+         }
+      }
+      .noUi-tooltip {
+         position: absolute;
+         bottom: -22px;
+         left: 50%;
+         transform: translate(-50%, 0px);
+         color: #999999;
+         font-size: 12px;
+         font-weight: 300;
+      }
+   }
+}
+
+.price-filter {
+   &__slider {
+   }
+
+   &__values {
+      display: flex;
+   }
+}
+.values-price-filter {
+   display: flex;
+   &__column {
+      display: flex;
+      align-items: center;
+      background-color: #f1f1ef;
+      padding: 5px;
+      border-radius: 8px;
+      margin: 0px 16px 0px 0px;
+   }
+
+   &__label {
+      margin: 0px 10px 0px 10px;
+      &:last-child {
+         margin: 0px 10px 0px 0px;
+      }
+   }
+
+   &__input {
+      .input {
+         background-color: #f1f1ef;
+         width: 50px;
+      }
+   }
+}

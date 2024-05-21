@@ -367,41 +367,79 @@ buttonCatalog.addEventListener("click", function (e) {
 
 
 
-//noislider=================================
+// //noislider=================================
+// const priceSlider = document.querySelector('.price-filter');
+// if (priceSlider) {
+//    noUiSlider.create(priceSlider, {
+//       start: [0, 200000],
+//       connect: true,
+//       //tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
+//       tooltips: true,
+//       range: {
+//          'min': [0],
+//          'max': [200000]
+//       }
+//    });
+
+
+
+//    //синие кружочки 
+//    const priceStart = document.getElementById('price-start');
+//    const priceEnd = document.getElementById('price-end');
+//    priceStart.addEventListener('change', setPriceValues);
+//    priceEnd.addEventListener('change', setPriceValues);
+//    //синие кружочки 
+
+//    //генерация оранжевых кружков и окошек 
+//    function setPriceValues() {
+//       let priceStartValue;
+//       let priceEndValue;
+//       if (priceStart.value != '') {
+//          priceStartValue = priceStart.value;
+//       }
+//       if (priceEnd.value != '') {
+//          priceEndValue = priceEnd.value;
+//       }
+//       priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
+//    }
+//    //генерация оранжевых кружков и окошек 
+// }
+// //noislider=================================
+
+
+//ползунки=================================================
 const priceSlider = document.querySelector('.price-filter__slider');
-if (priceSlider) {
-   noUiSlider.create(priceSlider, {
-      start: [0, 200000],
-      connect: true,
-      //tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
-      tooltips: true,
-      range: {
-         'min': [0],
-         'max': [200000]
-      }
-   });
 
-
-
-   //синие кружочки 
-   const priceStart = document.getElementById('price-start');
-   const priceEnd = document.getElementById('price-end');
-   priceStart.addEventListener('change', setPriceValues);
-   priceEnd.addEventListener('change', setPriceValues);
-   //синие кружочки 
-
-   //генерация оранжевых кружков и окошек 
-   function setPriceValues() {
-      let priceStartValue;
-      let priceEndValue;
-      if (priceStart.value != '') {
-         priceStartValue = priceStart.value;
-      }
-      if (priceEnd.value != '') {
-         priceEndValue = priceEnd.value;
-      }
-      priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
+noUiSlider.create(priceSlider, {
+   start: [0, 200000],
+   connect: true,
+   //tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
+   tooltips: [true, true],
+   range: {
+      'min': [0],
+      'max': [200000]
    }
-   //генерация оранжевых кружков и окошек 
+});
+
+//оранжевые кружочки 
+const priceStart = document.getElementById('price-start');
+const priceEnd = document.getElementById('price-end');
+priceStart.addEventListener('change', setPriceValues);
+priceEnd.addEventListener('change', setPriceValues)
+
+//генерация оранжевых кружков и окошек 
+function setPriceValues() {
+   let priceStartValue;
+   let priceEndValue;
+   if (priceStart.value != '') {
+      priceStartValue = priceStart.value
+   }
+   if (priceEnd.value != '') {
+      priceEndValue = priceEnd.value
+   }
+   priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
 }
-//noislider=================================
+
+//генерация оранжевых кружков и окошек 
+
+//ползунки=================================================
