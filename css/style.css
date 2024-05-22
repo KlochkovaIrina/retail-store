@@ -4318,7 +4318,7 @@ textarea {
 	margin: 0px 0px 20px 0px;
 }
 .filter-content__section {
-	max-width: 200px;
+	max-width: 250px;
 	margin: 0px 0px 10px 0px;
 }
 .filter-content__section-btn {
@@ -4523,7 +4523,54 @@ textarea {
 }
 .values-price-filter__input .input {
 	background-color: #f1f1ef;
-	width: 50px;
+	width: 75px;
+	font-size: 12px;
+}
+
+.categories-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.categories-content__column {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 33.333%;
+	        flex: 1 1 33.333%;
+	margin: 0px 42px 0px 0px;
+}
+.categories-content__link {
+	display: block;
+	border-radius: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	cursor: pointer;
+}
+.categories-content__link-1 {
+	background-color: #89e8e9;
+}
+.categories-content__link-2 {
+	background-color: #e4cfcc;
+}
+.categories-content__link-3 {
+	background-color: #e6e6e6;
+}
+.categories-content__title {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20.4px;
+	margin: 20px;
+	background-color: #89e8e9;
+}
+.categories-content__img img {
+	background-color: #d5b0bd;
+	height: 100%;
+	width: 100%;
+	min-height: 150px;
+	border-radius: 16px;
 }
 
 .wrapper {

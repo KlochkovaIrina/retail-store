@@ -413,8 +413,8 @@ const priceSlider = document.querySelector('.price-filter__slider');
 noUiSlider.create(priceSlider, {
    start: [0, 200000],
    connect: true,
-   //tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
-   tooltips: [true, true],
+   tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
+   //tooltips: [true, true],
    range: {
       'min': [0],
       'max': [200000]

@@ -1,7 +1,13 @@
 .content {
    &__menu {
    }
+   &__page {
+   }
+
+   &__page-categories {
+   }
 }
+//aside========================
 .menu-content {
    font-size: 15px;
    font-weight: 400;
@@ -59,7 +65,7 @@
    }
 
    &__section {
-      max-width: 200px;
+      max-width: 250px;
       margin: 0px 0px 10px 0px;
       &-btn {
          position: relative;
@@ -275,7 +281,56 @@
    &__input {
       .input {
          background-color: #f1f1ef;
-         width: 50px;
+         width: 75px;
+         font-size: 12px;
+      }
+   }
+}
+//aside========================
+
+.categories-content {
+   display: flex;
+   &__column {
+      flex: 1 1 33.333%;
+      margin: 0px 42px 0px 0px;
+   }
+
+   &__link {
+      display: block;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      &-1 {
+         background-color: #89e8e9;
+      }
+      &-2 {
+         background-color: #e4cfcc;
+      }
+      &-3 {
+         background-color: #e6e6e6;
+      }
+   }
+
+   &__title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 20.4px;
+      margin: 20px;
+      background-color: #89e8e9;
+      &:last-child {
+         // margin: 0px;
+      }
+   }
+
+   &__img {
+      img {
+         background-color: #d5b0bd;
+         height: 100%;
+         width: 100%;
+         min-height: 150px;
+         border-radius: 16px;
       }
    }
 }
