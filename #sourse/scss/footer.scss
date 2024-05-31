@@ -5,27 +5,39 @@
 
    &__body {
       padding: 40px 30px 60px 30px;
+      @media (max-width: $md4) {
+      }
    }
 
    &__top {
       display: flex;
       margin: 0px 0px 50px 0px;
+      @media (max-width: $md4) {
+         flex-direction: column;
+         margin: 0px 0px 10px 0px;
+      }
    }
 
    &__column {
       display: flex;
       flex-direction: column;
+      @media (max-width: $md4) {
+         flex: 1 1 100%;
+      }
       &-1 {
          flex: 1 1 40%;
-         //background-color: gainsboro;
+         @media (max-width: $md4) {
+            margin: 0px 0px 25px 0px;
+         }
       }
       &-2 {
          flex: 1 1 25%;
-         //background-color: khaki;
       }
       &-3 {
          flex: 1 1 25%;
-         //background-color: mediumvioletred;
+         @media (max-width: $md4) {
+            margin: 0px 0px 15px 0px;
+         }
       }
    }
 
@@ -33,7 +45,9 @@
       display: inline-block;
       margin: 0px 0px 110px 0px;
       cursor: pointer;
-
+      @media (max-width: $md4) {
+         margin: 0px 0px 10px 0px;
+      }
       img {
          width: 120px;
       }
@@ -43,12 +57,38 @@
       font-size: 17px;
       font-weight: 700;
       line-height: 29px;
-      letter-spacing: 0em;
+      //letter-spacing: 0em;
       color: #f8f8f8;
       margin: 0px 0px 10px 0px;
-   }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .active {
+         .footer__icon {
+            display: none;
+         }
+      }
 
+      span {
+         @media (max-width: $md4) {
+            margin: 0px 0px 0px 5px;
+            width: 11.5px;
+            height: 7px;
+            background: url("../img/img/footer_arrow.png") no-repeat;
+         }
+      }
+   }
+   .footer__label .active span {
+      transform: rotate(180deg);
+   }
    &__list {
+      @media (max-width: $md4) {
+         display: none;
+         &.active {
+            display: block;
+         }
+      }
+
       li {
          margin: 0px 0px 5px 0px;
          cursor: pointer;
@@ -80,5 +120,16 @@
       color: #959594;
       position: absolute;
       right: 0;
+      @media (max-width: $md4) {
+         left: 0;
+      }
    }
+}
+.footer__icon {
+   transition: all 0.3s ease 0s;
+}
+
+.active .footer__icon {
+   transform: rotate(180deg);
+   transition: all 0.3s ease 0s;
 }

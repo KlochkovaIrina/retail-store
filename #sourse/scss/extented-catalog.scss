@@ -39,6 +39,9 @@
 
    &__side {
       flex: 0 0 300px;
+      @media (max-width: $md4) {
+         display: none;
+      }
 
       //background-color: #959594;
    }
@@ -370,4 +373,23 @@
 
 .card-product {
    flex: 1 1 20%;
+}
+
+//tabs
+.tabs {
+   &__nav {
+   }
+
+   &__nav-btn {
+   }
+
+   &__content {
+   }
+
+   &__item {
+      display: none;
+   }
+}
+.tabs__item.active {
+   display: block;
 }

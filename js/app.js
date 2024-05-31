@@ -4472,6 +4472,78 @@ function setPriceValues() {
 
 //ползунки=================================================
 
+//открытие/закрытие поиска=================================
+
+
+
+
+
+
+//tabs===
+
+// const tabsBtn = document.querySelectorAll(".tabs__nav-btn");//выбрали все кнопки 
+// const tabsItems = document.querySelectorAll(".tabs__item");
+
+
+
+// tabsBtn.forEach(onTabClick);
+
+// function onTabClick(item) {
+//    item.addEventListener("click", function () {
+//       let currentBtn = item;
+//       let tabId = currentBtn.getAttribute("data-tab");
+//       let currentTab = document.querySelector(tabId);
+
+//       if (!currentBtn.classList.contains('active')) {
+//          console.log(tabId);
+
+//          tabsBtn.forEach(function (item) {
+//             item.classList.remove('active');
+//          });
+
+//          tabsItems.forEach(function (item) {
+//             item.classList.remove('active');
+//          });
+
+//          currentBtn.classList.add('active');
+//          currentTab.classList.add('active');
+//       }
+//    });
+// }
+
+// document.querySelector('.tabs__nav-btn').click();
+
+// в foter меню===============
+const footerLabelBtn = document.querySelectorAll(".footer__label");//выбрали все кнопки 
+const foterList = document.querySelectorAll(".footer__list");
+const foterIcon = document.querySelectorAll(".footer__icon");
+
+
+
+footerLabelBtn.forEach(function (item) {
+   item.addEventListener("click", function () {
+      let currentBtnFoter = item;
+      let foterId = currentBtnFoter.getAttribute("data-tab");
+      let currentFoterTab = document.querySelector(foterId);
+
+      if (currentBtnFoter.classList.contains('active')) {
+         currentBtnFoter.classList.remove('active');
+         currentFoterTab.classList.remove('active');
+      } else {
+
+         footerLabelBtn.forEach(function (item) {
+            item.classList.remove('active');
+         });
+         foterList.forEach(function (item) {
+            item.classList.remove('active');
+         });
+
+         currentBtnFoter.classList.add('active');
+         currentFoterTab.classList.add('active');
+      }
+   });
+});
+// в foter меню===============
 //Динамический адаптив (адаптив переносов элементов)=================
 
 // Dynamic Adapt v.1

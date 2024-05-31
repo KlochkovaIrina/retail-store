@@ -1,14 +1,14 @@
 .pagging {
    display: flex;
    align-items: center;
-   justify-content: center;
+   //justify-content: center;
    &__arrow {
-      height: 8px;
-      width: 4px;
+      width: 20px;
+      height: 20px;
       cursor: pointer;
-      background: url("../img/icons/arrow_grey.png") 0 0 / 100% no-repeat;
+      background: url("../img/img/arrow_pagging.png") no-repeat;
       &:last-child {
-         transform: rotate(-180deg);
+         // transform: rotate(-180deg);
       }
    }
 
@@ -35,11 +35,15 @@
       font-weight: 400;
       color: #333333;
       border-radius: 10%;
-      &-active {
-         background-color: #ededed;
+      &._active {
+         background-color: #5940d4;
+         color: #f1f1ef;
+         border-radius: 100px;
       }
       &:hover {
-         background-color: #ededed;
+         background-color: #5940d4;
+         color: #f1f1ef;
+         border-radius: 100px;
       }
    }
 }
